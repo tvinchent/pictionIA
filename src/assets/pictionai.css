@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
 
+:root{
+    --pictionAppWidth : 380px;
+}
 body{
     text-align: center;
     background: url('./interface/bg-circuit.svg');
     background-size: cover;
     background-color: rgb(7, 6, 30);
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
 }
 #logo{height: 111px; margin: 1em;}
-.input{text-align: center; background-color: rgba(255, 255, 255, 0.2) !important; color: white !important; --placeholder: white;}
-::placeholder{color: white; opacity: 1;}
+.input{text-align: center; background-color: rgba(255, 255, 255, 0.1) !important; color: white !important; --placeholder: white;}
+.input::placeholder{color: grey; opacity: 1;}
 .btn{
     background-color: #04F2FF;
     font-weight: bolder;
@@ -20,7 +23,7 @@ body{
     font-weight: bolder;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 540px) {
     #logo{
         height:auto;
     }

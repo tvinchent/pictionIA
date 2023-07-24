@@ -32,7 +32,7 @@
             <font-awesome-icon icon="fa-solid fa-star" />
         </div>
     </div>
-
+    <br>
 </template>
 
 <style scoped>
@@ -78,7 +78,7 @@ h3{
     margin: auto;
     border-radius: 2em;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 540px) {
     #topZone{
         width: 100%;
         margin: auto;
@@ -91,6 +91,7 @@ h3{
         width: 100%;
     }
 }
+
 </style>
 
 <script>
@@ -99,5 +100,6 @@ export default{
         this.$nextTick(() => this.$refs.focusName.focus())
     }
 }
+
 </script>
     

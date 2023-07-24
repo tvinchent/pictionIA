@@ -16,23 +16,24 @@
 </template>
 
 <style scoped>
-.questionContent{width: 40%; margin: auto;}
+.questionContent{width: var(--pictionAppWidth); margin: auto;}
 .bg-danger{background-color: #FC918F !important;}
-.ai{max-height: 250px; max-width: 100%;}
+.ai{max-width: 100%;}
 
 .fixed-bottom{height: 3em; padding: 1em; background-color: blue; border: 1px solid grey;}
 .success{color: rgb(86, 168, 190);}
 .error{color: pink;}
 h2{color: lightgrey;}
-#insideHelp{text-align: center; color: black; font-size: 1.3em; width: 40vw; padding: 1em;}
-.progress{height: 40px; } /* background-color: #FFA9B6;} */
+#insideHelp{text-align: center; color: black; font-size: 1.3em; width: var(--pictionAppWidth); padding: 1em;}
+.progress{height: 40px; background-color: #FFA9B6;}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 540px) {
   #logo{
         display: none;
     }
   .questionContent{width: 100%; margin: auto;}
   #insideHelp{width: 90vw;}
+  .ai{max-height: none;}
 }
 </style>
 
@@ -52,7 +53,7 @@ export default{
         resClass: 'bg-danger',
         currentPourcentQuestion: 0,
         timePourcent: '0',
-        help: '% de similitude',
+        help: '',
         disabled: false,
         timing: '',
         myTimer: '',
@@ -92,7 +93,7 @@ export default{
   methods: {
       async fetchData() {
           this.api = null
-          const res = await fetch(`./../api.json`)
+          const res = await fetch(`./../api-test.json`)
           this.api = await res.json()
           let rdmNumber = Math.floor(Math.random() * this.api.length)
           this.imageAi = this.api[rdmNumber].image // dalle2.webp

@@ -25,14 +25,14 @@
 <style scoped>
 .scoreContent{
     background-color: rgba(0, 0, 0, 0.30);
-    width: 50%;
+    width: var(--pictionAppWidth);
     margin: auto;
     padding: 5em 0 0.5em 0;
     margin-top: 2em;
 }
-#bubble{text-align: center; margin-top: -7em; position: absolute; width: 50vw;}
+#bubble{text-align: center; margin-top: -7em; width: 100%;}
 .resultQuestion{width: 5em;}
-p{color: white;}
+p{color: white; margin: 1em;}
 .questionOneByOne{display: inline-block; width: 2em;}
 .questionNumber{font-size: small;}
 .questionScore{height: 0.2em; margin-right: 0.1em;}
@@ -40,7 +40,7 @@ p{color: white;}
 .red{background-color: red;}
 h2, h3{color: #04F2FF;}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 540px) {
     #logo{
         display: none;
     }

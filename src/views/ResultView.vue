@@ -26,7 +26,7 @@
                 <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-30.webp"></div>
             </div>
             <div class="giftText">
-                Dommage ! Mais bon cela prouve bien que nous sommes la race supérieur et que notre conquête du monde est bien justifié !
+                Dommage ! Mais bon cela prouve bien que nous sommes la race supérieure et que notre conquête du monde est bien justifiée !
             </div>    
         </div>
     </div><br>
@@ -36,9 +36,9 @@
 <style>
 .scoreContent{
     background-color: rgba(0, 0, 0, 0.30);
-    width: 50%;
+    width: var(--pictionAppWidth);
     margin: auto;
-    padding: 2em 0;
+    padding: 1em 0;
     color: white;
 }
 .giftImageContainer{
@@ -58,7 +58,7 @@
 .giftText{
     margin-top: 1em;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 540px) {
     #logo{
         display: none;
     }
