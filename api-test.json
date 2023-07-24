@@ -1,0 +1,12 @@
+[
+    {
+        "prompt": "ok",
+        "image": "/src/assets/images/dalle0.webp",
+        "indice": "On recherche 2 mots"
+    },
+    {
+        "prompt": "ok",
+        "image": "/src/assets/images/dalle1.webp",
+        "indice": "On recherche un animal et un métier"
+    }
+]
