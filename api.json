@@ -250,11 +250,6 @@
         "image": "assets/images/farfelue_42.webp",
         "indice": "On recherche 2 mots"
     },
-	// {
-    //     "prompt": "En rang d’oignons",
-    //     "image": "assets/images/expression_13.webp",
-    //     "indice": "On recherche 1 expression"
-    // },
 	{
         "prompt": "Michael Jackson fusée",
         "image": "assets/images/expression_43.webp",
