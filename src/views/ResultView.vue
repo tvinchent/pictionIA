@@ -13,11 +13,11 @@
                 <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-70.webp" alt="Score supérieur à 70 !"></div>
             </div>
         </div>
-        <div v-else-if="Math.trunc(totalPourcent/10)>=50" class="resultContent">
+        <div v-else-if="Math.trunc(totalPourcent/10)>=50" class="resultContent row">
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
                     <h2>C'est fini</h2><br>
-                    Votre score moyen est de : {{ Math.trunc(totalPourcent/10) }}%<br><br>
+                    Votre score moyen est de : <h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
                 </p>
                 Vous ne seriez pas un robot déguisé en humain par hasard ?
             </div>   
@@ -25,11 +25,11 @@
                 <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-50.webp" alt="Score supérieur à 50 !"></div>
             </div>
         </div>
-        <div v-else class="resultContent">
+        <div v-else class="resultContent row">
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
                     <h2>C'est fini</h2><br>
-                    Votre score moyen est de : {{ Math.trunc(totalPourcent/10) }}%<br><br>
+                    Votre score moyen est de : <h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
                 </p>
                 Dommage ! Mais bon cela prouve bien que nous sommes la race supérieure et que notre conquête du monde est bien justifiée !
             </div>   
