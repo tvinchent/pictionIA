@@ -1,8 +1,8 @@
 <template>
-  <img src="../assets/logo.svg" id="logo">
+  <img src="../assets/logo.svg" id="logo" alt="logo pictionAi">
   <div class="questionContent">
     <div class="fullwidth">
-        <img :src="imageAi" class="ai">
+        <img :src="imageAi" class="ai" alt="devinette">
     </div>
     <br>
     <div class="progress">
@@ -24,7 +24,8 @@
 .success{color: rgb(86, 168, 190);}
 .error{color: pink;}
 h2{color: lightgrey;}
-#insideHelp{text-align: center; color: black; font-size: 1.3em; width: var(--pictionAppWidth); padding: 1em;}
+#insideHelp{text-align: center; color: black; font-size: 1.3em; width: var(--pictionAppWidth); padding: 1em;
+    color: white; font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);}
 .progress{height: 40px; background-color: #FFA9B6;}
 
 @media screen and (max-width: 540px) {
@@ -33,7 +34,11 @@ h2{color: lightgrey;}
     }
   .questionContent{width: 100%; margin: auto;}
   #insideHelp{width: 90vw;}
-  .ai{max-height: none;}
+  .ai{
+    max-height: 230px;
+	width: 100vw;
+	object-fit: cover;
+}
 }
 </style>
 
@@ -93,7 +98,7 @@ export default{
   methods: {
       async fetchData() {
           this.api = null
-          const res = await fetch(`./../api-test.json`)
+          const res = await fetch(`./../api.json`)
           this.api = await res.json()
           let rdmNumber = Math.floor(Math.random() * this.api.length)
           this.imageAi = this.api[rdmNumber].image // dalle2.webp
