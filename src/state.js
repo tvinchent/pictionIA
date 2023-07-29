@@ -4,5 +4,6 @@ export const store = reactive({
   questionNumber: 1,
   pourcentQuestions : Array,
   promptAi: '',
-  bestScore: 0
+  bestScore: 0,
+  arrayQuestionsNumbers : []
 })

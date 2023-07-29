@@ -10,7 +10,7 @@
     </div>
     <br>
     <form v-on:submit.prevent>
-            <input type="text" :placeholder="placeholderAi" class="form-control input" v-model="promptUser" ref="focusMe" aria-disabled="false" :disabled="disabled"><!-- Guess the prompt !  -->
+            <input type="text" :placeholder="placeholderAi" class="form-control input promptUser" v-model="promptUser" ref="focusMe" aria-disabled="false" :disabled="disabled"><!-- Guess the prompt !  -->
     </form>
   </div>
 </template>
@@ -38,7 +38,10 @@ h2{color: lightgrey;}
     max-height: 230px;
 	width: 100vw;
 	object-fit: cover;
-}
+    }
+    .promptUser{
+        margin-top: -1em;
+    }
 }
 </style>
 
@@ -96,11 +99,16 @@ export default{
 
   },
   methods: {
+      generateRandom(min, max) {
+          var num = Math.floor(Math.random() * (max - min + 1)) + min;
+          return store.arrayQuestionsNumbers.includes(num) ? this.generateRandom(min, max) : num;
+      },
       async fetchData() {
           this.api = null
           const res = await fetch(`./../api.json`)
           this.api = await res.json()
-          let rdmNumber = Math.floor(Math.random() * this.api.length)
+          let rdmNumber = this.generateRandom(1, this.api.length)
+          store.arrayQuestionsNumbers.push(rdmNumber)
           this.imageAi = this.api[rdmNumber].image
           this.promptAi = this.api[rdmNumber].prompt
           this.placeholderAi = this.api[rdmNumber].indice

@@ -25,8 +25,8 @@
                 </span>
             </div>
         </p>
-        <div v-if="store.questionNumber-1<10"><RouterLink to="/question"><button type="button" class="btn btn-warning btn-lg" id="questionSuivante" v-on:click="clrTimeout">Question suivante <font-awesome-icon icon="fa-solid fa-arrow-right" /></button></RouterLink></div>
-        <div v-else><RouterLink to="/result"><button type="button" class="btn btn-warning btn-lg" id="myResult" v-on:click="clrTimeout">Résultat <font-awesome-icon icon="fa-solid fa-arrow-right" /></button></RouterLink></div>
+        <div v-if="store.questionNumber-1<10"><RouterLink to="/question"><button type="button" class="btn btn-warning btn-lg" id="questionSuivante" v-on:click="clrTimeout">Question suivante <font-awesome-icon icon="fa-solid fa-arrow-right" class="next" /></button></RouterLink></div>
+        <div v-else><RouterLink to="/result"><button type="button" class="btn btn-warning btn-lg" id="myResult" v-on:click="clrTimeout">Résultat <font-awesome-icon icon="fa-solid fa-arrow-right" class="next" /></button></RouterLink></div>
         <div class="cleared"></div>
     </div>
 </template><!-- push en ajax le pseudo+score -->
@@ -45,10 +45,10 @@
 p{color: white; margin: 1em;}
 .announcement{
     background-color: rgba(255, 255, 255, 25%);
-    margin: 1em;
+    margin: -1em 1em 1em 1em;
     padding: 0.5em;
 }
-.questionOneByOne{display: inline-block; width: 2em;}
+.questionOneByOne{display: inline-block; width: 1.5em;}
 .questionNumber{font-size: small;}
 .oldQuestion, .pendingQuestion{
     opacity: 0.5;
@@ -61,6 +61,7 @@ p{color: white; margin: 1em;}
 h2, h3{color: #04F2FF;}
 h3{font-weight: 700;}
 h4{margin-bottom: -1px;}
+.next{float: right; margin-top: 0.3em;}
 
 @media screen and (max-width: 540px) {
     #logo{
