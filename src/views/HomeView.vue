@@ -60,7 +60,7 @@
 }
 h1{
     font-weight: 700;
-    padding: 1em 0;
+    padding-bottom: 1em;
     /* line-height: 1; */
 }
 #explicationTexte{
@@ -99,6 +99,9 @@ h4{
     #topZone{
         width: 100%;
         margin: auto;
+    }
+    .actionContainer{
+        padding: 1em 0;
     }
     .inputName{
         width: 100%;

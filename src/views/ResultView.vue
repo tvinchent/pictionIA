@@ -5,7 +5,7 @@
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
                     <h2>C'est fini</h2><br>
-                    Votre score moyen est de : <h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
+                    <span class="yourScore">Votre score moyen est de : </span><h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
                 </p>
                 Bonne nouvelle vous avez un score extra à ce jeu ! Par contre, la mauvaise c'est que vous avez eu 0 au test de Turing.
             </div>   
@@ -17,7 +17,7 @@
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
                     <h2>C'est fini</h2><br>
-                    Votre score moyen est de : <h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
+                    <span class="yourScore">Votre score moyen est de : </span><h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
                 </p>
                 Vous ne seriez pas un robot déguisé en humain par hasard ?
             </div>   
@@ -29,7 +29,7 @@
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
                     <h2>C'est fini</h2><br>
-                    Votre score moyen est de : <h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
+                    <span class="yourScore">Votre score moyen est de : </span><h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
                 </p>
                 Dommage ! Mais bon cela prouve bien que nous sommes la race supérieure et que notre conquête du monde est bien justifiée !
             </div>   
@@ -43,12 +43,15 @@
 
 <style>
 .scoreContent{
-    background-color: #151B2C;
+    background-color: rgb(21, 27, 44, 0.8);
     max-width: 740px;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
     border-radius: 1em;
     color: white;
+}
+.yourScore{
+    font-weight: 700;
 }
 .giftImageContainer{
     background: url('../assets/interface/bg-rond_score.svg') no-repeat center;

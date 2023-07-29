@@ -17,7 +17,7 @@
 
 <style scoped>
 .questionContent{width: var(--pictionAppWidth); margin: auto;}
-.bg-danger{background-color: #FC918F !important;}
+.bg-danger{background-color: #F4807D !important;}
 .ai{max-width: 100%;}
 
 .fixed-bottom{height: 3em; padding: 1em; background-color: blue; border: 1px solid grey;}
@@ -49,7 +49,7 @@ export default{
   data() {
       return {
         store,
-        chooseTime: 20,
+        chooseTime: 30,
         promptUser: '',
         api: '',
         imageAi : '',
@@ -101,8 +101,8 @@ export default{
           const res = await fetch(`./../api.json`)
           this.api = await res.json()
           let rdmNumber = Math.floor(Math.random() * this.api.length)
-          this.imageAi = this.api[rdmNumber].image // dalle2.webp
-          this.promptAi = this.api[rdmNumber].prompt // armchair avocado, monkey astronaut
+          this.imageAi = this.api[rdmNumber].image
+          this.promptAi = this.api[rdmNumber].prompt
           this.placeholderAi = this.api[rdmNumber].indice
       },
       similarity(s1, s2) {
