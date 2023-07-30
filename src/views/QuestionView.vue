@@ -4,7 +4,6 @@
     <div class="fullwidth">
         <img :src="imageAi" class="ai" alt="devinette">
     </div>
-    <br>
     <div class="progress">
         <div :class="resClass" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progressPrompt" style="width: 0;"><div id="insideHelp">{{ help }}</div></div>
     </div>
@@ -18,7 +17,7 @@
 <style scoped>
 .questionContent{width: var(--pictionAppWidth); margin: auto;}
 .bg-danger{background-color: #F4807D !important;}
-.ai{max-width: 100%;}
+.ai{max-width: 100%; margin-bottom: 1em;}
 
 .fixed-bottom{height: 3em; padding: 1em; background-color: blue; border: 1px solid grey;}
 .success{color: rgb(86, 168, 190);}
@@ -38,6 +37,7 @@ h2{color: lightgrey;}
     max-height: 230px;
 	width: 100vw;
 	object-fit: cover;
+    margin-bottom: .5em;
     }
     .promptUser{
         margin-top: -1em;

@@ -2,7 +2,7 @@
     {
         "prompt": "Jesus selfie",
         "image": "assets/images/farfelue_01.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	
 	{
@@ -27,7 +27,7 @@
 	{
         "prompt": "Einstein chapeau",
         "image": "assets/images/farfelue_04.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	
 	
@@ -47,7 +47,7 @@
 	{
         "prompt": "Beyoncé mange ses nems",
         "image": "assets/images/farfelue_07.webp",
-        "indice": "On recherche 1 personnalité et 3 mots"
+        "indice": "On recherche 1 perso. et 3 mots"
     },
 			
 	{
@@ -63,12 +63,12 @@
 	{
         "prompt": "Freddie Mercury Télétubbies",
         "image": "assets/images/farfelue_10.webp",
-        "indice": "On recherche 1 personnalité et 1 animé"
+        "indice": "On recherche 1 perso. et 1 animé"
     },
 	{
         "prompt": "Toys story Bois",
         "image": "assets/images/farfelue_11.webp",
-        "indice": "On recherche 1 nom de film et 1 mot"
+        "indice": "On recherche 1 film et 1 mot"
     },
 	{
         "prompt": "Les murs ont des oreilles",
@@ -93,7 +93,7 @@
 	{
         "prompt": "Jeanne d'arc Tank",
         "image": "assets/images/farfelue_16.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	{
         "prompt": "Haut comme trois pommes",
@@ -118,7 +118,7 @@
 	{
         "prompt": "Chuck Norris maison de retraite",
         "image": "assets/images/farfelue_22.webp",
-        "indice": "On recherche 1 personnalité et 1 lieu"
+        "indice": "On recherche 1 perso. et 1 lieu"
     },
 	{
         "prompt": "Chauve-souris plumes",
@@ -138,7 +138,7 @@
 	{
         "prompt": "Chat masque",
         "image": "assets/images/farfelue_25.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	{
         "prompt": "Tomber dans les pommes",
@@ -153,7 +153,7 @@
 	{
         "prompt": "Marie Curie Influenceuse",
         "image": "assets/images/farfelue_27.webp",
-        "indice": "On recherche 1 personnalité et 1 \"métier\""
+        "indice": "On recherche 1 perso. et 1 \"métier\""
     },
 	{
         "prompt": "Armée Pingouins",
@@ -188,12 +188,12 @@
 	{
         "prompt": "Dark vador flute",
         "image": "assets/images/farfelue_32.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	{
         "prompt": "Angelina Jolie",
         "image": "assets/images/expression_33.webp",
-        "indice": "On recherche 1 personnalité"
+        "indice": "On recherche 1 perso."
     },
 	{
         "prompt": "Chien professeur",
@@ -213,7 +213,7 @@
 	{
         "prompt": "Jennifer connely Wonderwoman",
         "image": "assets/images/farfelue_36.webp",
-        "indice": "On recherche 1 personnalité et 1 personnage"
+        "indice": "On recherche 1 perso. et 1 comic"
     },
 	{
         "prompt": "Baleine bocal",
@@ -253,12 +253,12 @@
 	{
         "prompt": "Michael Jackson fusée",
         "image": "assets/images/expression_43.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	{
         "prompt": "Darwin rigole",
         "image": "assets/images/farfelue_44.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	{
         "prompt": "Flamants roses dansants",
@@ -273,7 +273,7 @@
 	{
         "prompt": "Tom hanks Tupac",
         "image": "assets/images/farfelue_46.webp",
-        "indice": "On recherche 2 personnalités"
+        "indice": "On recherche 2 perso.s"
     },
 	{
         "prompt": "Les doigts dans le nez",
@@ -308,7 +308,7 @@
 	{
         "prompt": "Audrey Hepburn",
         "image": "assets/images/farfelue_52.webp",
-        "indice": "On recherche 1 personnalité"
+        "indice": "On recherche 1 perso."
     },
 	{
         "prompt": "Astronaute surfeur",
@@ -353,7 +353,7 @@
 	{
         "prompt": "Brad Pitt robot",
         "image": "assets/images/farfelue_58.webp",
-        "indice": "On recherche 1 personnalité et 1 mot"
+        "indice": "On recherche 1 perso. et 1 mot"
     },
 	{
         "prompt": "Il n'y a pas le feu au lac",

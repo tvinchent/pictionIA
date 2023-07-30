@@ -100,6 +100,9 @@ h4{
         width: 100%;
         margin: auto;
     }
+    h1{
+        font-size: 1em;
+    }
     .actionContainer{
         padding: 1em 0;
     }
