@@ -1,0 +1,47 @@
+[
+    {
+        "prompt": "Jesus selfie",
+        "image": "/src/assets/images/farfelue_01.webp",
+        "indice": "On recherche 1 perso. et 1 mot"
+    },
+	{
+        "prompt": "Bigfoot",
+        "image": "/src/assets/images/farfelue_05.webp",
+        "indice": "On recherche 1 mot"
+    },	
+    {
+        "prompt": "Un froid de canard",
+        "image": "/src/assets/images/expression_02.webp",
+        "indice": "On recherche une expression"
+    },		
+	{
+        "prompt": "Say my name",
+        "image": "/src/assets/images/farfelue_07.webp",
+        "indice": "On cherche un titre de chanson"
+    },
+	{
+        "prompt": "Toys story Bois",
+        "image": "/src/assets/images/farfelue_11.webp",
+        "indice": "On recherche 1 film et 1 mot"
+    },
+	{
+        "prompt": "Les murs ont des oreilles",
+        "image": "/src/assets/images/expression_03.webp",
+        "indice": "On recherche 1 expression"
+    },
+	{
+        "prompt": "Chaton surfeur",
+        "image": "/src/assets/images/farfelue_15.webp",
+        "indice": "On recherche 2 mots"
+    },
+	{
+        "prompt": "Jeanne d'arc Tank",
+        "image": "/src/assets/images/farfelue_16.webp",
+        "indice": "On recherche 1 personnalité et 1 mot"
+    },
+	{
+        "prompt": "Haut comme trois pommes",
+        "image": "/src/assets/images/expression_05.webp",
+        "indice": "On recherche 1 expression"
+    }
+]

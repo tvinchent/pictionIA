@@ -1,48 +1,57 @@
 <template>
     <img src="../assets/logo.svg" id="logo" alt="logo pictionAi"><br>
     <div class="scoreContent">
-        <div v-if="Math.trunc(totalPourcent/10)>=70" class="resultContent row"> 
+        <div v-if="Math.trunc(totalPourcent / 5) >= 70" class="resultContent row">
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
-                    <h2>C'est fini</h2><br>
-                    <span class="yourScore">Votre score moyen est de : </span><h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
+                <h2>C'est fini</h2><br>
+                <span class="yourScore">Votre score moyen est de : </span>
+                <h3>{{ Math.trunc(totalPourcent / 5) }}%</h3>
                 </p>
-                Bonne nouvelle vous avez un score extra à ce jeu ! Par contre, la mauvaise c'est que vous avez eu 0 au test de Turing.
-            </div>   
+                Bonne nouvelle vous avez un score extra à ce jeu ! Par contre, la mauvaise c'est que vous avez eu 0 au
+                test de Turing.
+            </div>
             <div class="giftImageContainer col-lg-6 col-sm-12">
-                <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-70.webp" alt="Score supérieur à 70 !"></div>
+                <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-70.webp"
+                        alt="Score supérieur à 70 !"></div>
             </div>
         </div>
-        <div v-else-if="Math.trunc(totalPourcent/10)>=50" class="resultContent row">
+        <div v-else-if="Math.trunc(totalPourcent / 5) >= 50" class="resultContent row">
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
-                    <h2>C'est fini</h2><br>
-                    <span class="yourScore">Votre score moyen est de : </span><h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
+                <h2>C'est fini</h2><br>
+                <span class="yourScore">Votre score moyen est de : </span>
+                <h3>{{ Math.trunc(totalPourcent / 5) }}%</h3>
                 </p>
                 Vous ne seriez pas un robot déguisé en humain par hasard ?
-            </div>   
+            </div>
             <div class="giftImageContainer col-lg-6 col-sm-12">
-                <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-50.webp" alt="Score supérieur à 50 !"></div>
+                <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-50.webp"
+                        alt="Score supérieur à 50 !"></div>
             </div>
         </div>
         <div v-else class="resultContent row">
             <div class="giftText col-lg-6 col-sm-12">
                 <p>
-                    <h2>C'est fini</h2><br>
-                    <span class="yourScore">Votre score moyen est de : </span><h3>{{ Math.trunc(totalPourcent/10) }}%</h3> 
+                <h2>C'est fini</h2><br>
+                <span class="yourScore">Votre score moyen est de : </span>
+                <h3>{{ Math.trunc(totalPourcent / 5) }}%</h3>
                 </p>
-                Dommage ! Mais bon cela prouve bien que nous sommes la race supérieure et que notre conquête du monde est bien justifiée !
-            </div>   
+                Dommage ! Mais bon cela prouve bien que nous sommes la race supérieure et que notre conquête du monde
+                est bien justifiée !
+            </div>
             <div class="giftImageContainer col-lg-6 col-sm-12">
-                <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-30.webp" alt="Score inférieur à 50"></div>
-            </div>  
+                <div class="giftImage"><img class="giftImageSrc" src="../assets/interface/score-30.webp"
+                        alt="Score inférieur à 50"></div>
+            </div>
         </div>
     </div><br>
-    <RouterLink to="/question"><button type="button" class="btn btn-warning btn-lg" id="nouvellePartie">Nouvelle partie</button></RouterLink><br><br>
+    <RouterLink to="/question"><button type="button" class="btn btn-warning btn-lg" id="nouvellePartie">Nouvelle
+            partie</button></RouterLink><br><br>
 </template>
 
 <style>
-.scoreContent{
+.scoreContent {
     background-color: rgb(21, 27, 44, 0.8);
     max-width: 740px;
     margin: auto;
@@ -50,40 +59,50 @@
     border-radius: 1em;
     color: white;
 }
-.yourScore{
+
+.yourScore {
     font-weight: 700;
 }
-.giftImageContainer{
+
+.giftImageContainer {
     background: url('../assets/interface/bg-rond_score.svg') no-repeat center;
     width: 225px;
     height: 251px;
     padding: 19px 0;
     margin: auto;
 }
-.giftImage{
+
+.giftImage {
     padding: 1em;
 }
-.giftImageSrc{
+
+.giftImageSrc {
     width: 180px;
     border-radius: 50%;
 }
-.giftText{
+
+.giftText {
     margin-top: 1em;
     text-align: left;
 }
-h3{color: #04F2FF;
+
+h3 {
+    color: #04F2FF;
     font-size: 2em;
 }
+
 @media screen and (max-width: 540px) {
-    #logo{
+    #logo {
         display: none;
     }
-    .scoreContent{
+
+    .scoreContent {
         width: 100%;
     }
-    .giftText{
-    margin-top: 1em;
-    text-align: center;
+
+    .giftText {
+        margin-top: 1em;
+        text-align: center;
     }
 
 }
@@ -103,6 +122,6 @@ export default {
         store.questionNumber = 1
         this.totalPourcent = store.pourcentQuestions.reduce((partialSum, a) => partialSum + a, 0);
     }
-    
+
 }
 </script>
