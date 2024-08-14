@@ -1,6 +1,7 @@
 <template>
     <div id="topZone">
-        <img src="../assets/logo.svg" id="logo"><br>
+        <img src="../assets/logo.svg" id="logo">
+
 
 
         <RouterLink to="/question"><button type="button" class="btn btn-info btn-lg mx-auto" id="jouer">JOUER</button>
@@ -11,19 +12,17 @@
             <div class="row">
                 <div class="col-lg-5 col-sm-12" id="explicationTexte">
                     <div id="explicationTexteContent">
-                        <h1>Piction IA</h1>
-                        <p>Tente de découvrir les mots derrière l'image que l'IA a générée.</p>
+                        <h2>Tente de découvrir les mots derrière l'image que l'IA a générée.</h2>
+                        <p>Exemple : ici, la réponse est "rire comme une baleine"</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <img src="../assets/interface/exemple.png" id="illustrationHome"> <span class="response">*</span>
+                    <img src="../assets/interface/exemple.png" id="illustrationHome">
                 </div>
             </div>
         </div>
 
     </div>
-
-    <p class="response">* Exemple : rire comme une baleine</p>
 
 </template>
 
@@ -45,7 +44,7 @@
 #explication {
     padding: 1em;
     margin-top: 1em;
-    border-radius: 10px;
+    border-radius: 2em;
     background: rgb(221, 148, 164);
     background: linear-gradient(315deg, rgba(221, 148, 164, 1) 0%, rgba(255, 192, 203, 1) 100%);
 }
@@ -58,8 +57,19 @@
 }
 
 #illustrationHome {
-    width: 90%;
+    width: 75%;
     border-radius: 1em;
+}
+
+h1 {
+    color: rgb(221, 148, 164);
+    margin: 0;
+    padding: 0;
+    font-size: 1.35em;
+}
+
+h2 {
+    font-size: 1.5em;
 }
 
 h3 {
@@ -96,7 +106,7 @@ p {
     }
 
     #jouer {
-        margin-top: 1em;
+        /* margin-top: 1em; */
         width: 100%;
     }
 }

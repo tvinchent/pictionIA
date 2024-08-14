@@ -155,7 +155,7 @@ export default {
         },
         async fetchData() {
             this.api = null
-            const res = await fetch(`api.json`)
+            const res = await fetch(`./../api-dev.json`)
             this.api = await res.json()
             let rdmNumber = this.generateRandom(1, this.api.length)
             store.arrayQuestionsNumbers.push(rdmNumber)
