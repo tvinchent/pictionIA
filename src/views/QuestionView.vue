@@ -155,11 +155,11 @@ export default {
         },
         async fetchData() {
             this.api = null
-            const res = await fetch(`./../api-dev.json`)
+            const res = await fetch(`${import.meta.env.BASE_URL}/api-dev.json`)
             this.api = await res.json()
             let rdmNumber = this.generateRandom(1, this.api.length)
             store.arrayQuestionsNumbers.push(rdmNumber)
-            this.imageAi = this.api[rdmNumber].image
+            this.imageAi = import.meta.env.BASE_URL + '/' + this.api[rdmNumber].image
             this.promptAi = this.api[rdmNumber].prompt
             this.placeholderAi = this.api[rdmNumber].indice
         },

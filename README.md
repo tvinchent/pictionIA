@@ -1,6 +1,5 @@
 # pictionAi
 
-This template should help get you started with your own pictionAI project.
 
 ## Project Setup
 
